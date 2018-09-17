@@ -19,6 +19,10 @@ Read the [API docs](https://docs.rs/dont_disappear/)
 
 [API docs](https://docs.rs/dont_disappear/)
 
+## Dependencies
+
+This project uses crossterm 0.4 in the `any_key_to_continue` module.
+
 ## Downloads
 
 [Docs](https://gitlab.com/efunb/dont_disappear/-/jobs/artifacts/master/download?job=docs)
