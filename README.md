@@ -7,13 +7,26 @@ Tiny crates that stops the console window form closing when the program finishes
 
 ## Why you need it.
 
+When making an app without a GUI sometimes you display some information before the program ends. If you send this program to someone and they run it in the windows command prompt or many other consoles the window may close before showing the data. This crate allows the user to wait until they have read the data before they close the window.
+
 ## Features
 
 ### Close with enter.
 
 You can close the window with the enter key.
 
-##Docs
+Add
+
+```rust
+extern crate dont_disappear;
+```
+to the top of your file and 
+
+```rust
+dont_disappear::enter_to_continue();
+```
+to where your program ends
+## Docs
 
 [API docs](https://docs.rs/dont_disappear/)
 
