@@ -7,7 +7,7 @@ Tiny crates that stops the console window form closing when the program finishes
 
 
 
-https://docs.rs/dont_disappear/
+[API docs](https://docs.rs/dont_disappear/)
 
 ## Downloads
 
