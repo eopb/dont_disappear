@@ -28,14 +28,13 @@ check-dont_disappear:
 
 unittests:
   stage: test
+  cache: none
   script:
     - apt-get update
     - apt-get install tree -y
     - tree
+    - rm -rf examples
     - cargo build
-    - cd examples
-    - rm -f any_key_to_continue.rs
-    - cd ..
     - tree
     - cargo test
 
