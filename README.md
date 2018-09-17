@@ -45,6 +45,7 @@ This project uses crossterm 0.4 in the `any_key_to_continue` module.
 
 [Docs](https://gitlab.com/efunb/dont_disappear/-/jobs/artifacts/master/download?job=docs)
 
+## **Warning**
 
 **If you are viewing this from GitHub then this is a read only copy. Please contribute to the GitLab copy [here](https://gitlab.com/efunb/dont_disappear).**
 
