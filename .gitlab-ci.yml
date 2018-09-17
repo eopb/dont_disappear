@@ -29,6 +29,9 @@ check-dont_disappear:
 unittests:
   stage: test
   script:
+    - apt install tree
+    - tree
+    - cargo build
     - rm -f /examples/press_close.rs
     - cargo test
 
