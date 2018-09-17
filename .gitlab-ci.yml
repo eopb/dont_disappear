@@ -28,7 +28,6 @@ check-dont_disappear:
 
 unittests:
   stage: test
-  cache: none
   script:
     - apt-get update
     - apt-get install tree -y
