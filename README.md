@@ -12,7 +12,9 @@ When making an app without a GUI sometimes you display some information before t
 ## Features
 
 [Close with any key.](https://docs.rs/dont_disappear/2.1.1/dont_disappear/any_key_to_continue/index.html)
+
 [Close with enter key.](https://docs.rs/dont_disappear/2.1.1/dont_disappear/enter_to_continue/index.html)
+
 [Close with window manager.](https://docs.rs/dont_disappear/2.1.1/dont_disappear/fn.press_close.html)
 
 ## Examples
