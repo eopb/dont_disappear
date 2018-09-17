@@ -8,12 +8,13 @@ pub mod enter_to_continue {
     /// ### Message then close with enter.
     /// Prompts user with message `"Press enter to close."`, waits for the user to press enter then ends to program (closing the window).
     /// Add
-    /// ```rust
+    /// ```no_run
     /// extern crate dont_disappear;
     /// ```
     /// to the top of your file
     /// and
-    /// ```rust
+
+    /// ```no_run
     /// dont_disappear::enter_to_continue::default();
     /// ```
     /// to where your program ends
@@ -23,12 +24,13 @@ pub mod enter_to_continue {
     /// ### Custom message then close with enter.
     /// Prompts user with a custom message, waits for the user to press enter then ends to program (closing the window).
     /// Add
-    /// ```rust
+    /// ```no_run
     /// extern crate dont_disappear;
     /// ```
     /// to the top of your file
     /// and
-    /// ```rust
+
+    /// ```no_run
     /// dont_disappear::enter_to_continue::custom_msg("Your custom message.");
     /// ```
     /// to where your program ends
@@ -51,7 +53,8 @@ pub mod any_key_to_continue {
     /// ```
     /// to the top of your file
     /// and
-    /// ```rust
+
+    /// ```no_run
     /// dont_disappear::any_key_to_continue::default();
     /// ```
     /// to where your program ends
@@ -66,7 +69,8 @@ pub mod any_key_to_continue {
     /// ```
     /// to the top of your file
     /// and
-    /// ```rust
+
+    /// ```no_run
     /// dont_disappear::any_key_to_continue::custom_msg("Your custom message.");
     /// ```
     /// to where your program ends
@@ -84,17 +88,18 @@ pub mod any_key_to_continue {
 
 /// ### Press close only with window manager or Ctrl-c.
 /// The program just stops and waits to be killed by pressing close only with window manager or Ctrl-c.
-/// The thread is parked so it does not use CPU.
+/// The thread is [parked](https://doc.rust-lang.org/nightly/std/thread/fn.park.html) so it does not use CPU.
 /// Add
-/// ```rust
+/// ```no_run
 /// extern crate dont_disappear;
 /// ```
 /// to the top of your file
 /// and
-/// ```rust
+/// ```no_run
 /// dont_disappear::press_close();
 /// ```
 /// to where your program ends
+// possible
 pub fn press_close() {
     loop {
         std::thread::park();

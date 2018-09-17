@@ -11,9 +11,11 @@ When making an app without a GUI sometimes you display some information before t
 
 ## Features
 
-[Close with any key.](https://docs.rs/dont_disappear/2.0.1/dont_disappear/any_key_to_continue/index.html)
-[Close with enter key.](https://docs.rs/dont_disappear/2.0.1/dont_disappear/enter_to_continue/index.html)
-[Close with window manager.]()
+[Close with any key.](https://docs.rs/dont_disappear/2.1.1/dont_disappear/any_key_to_continue/index.html)
+
+[Close with enter key.](https://docs.rs/dont_disappear/2.1.1/dont_disappear/enter_to_continue/index.html)
+
+[Close with window manager.](https://docs.rs/dont_disappear/2.1.1/dont_disappear/fn.press_close.html)
 
 ## Examples
 [Any key to continue](https://gitlab.com/efunb/dont_disappear/raw/master/examples/any_key_to_continue.rs)
@@ -24,7 +26,7 @@ cargo run --example any_key_to_continue
 ```
 cargo run --example enter_to_continue
 ```
-[Close with window manager.]()
+[Close with window manager.](https://gitlab.com/efunb/dont_disappear/raw/master/examples/press_close.rs)
 ```
 cargo run --example press_close
 ```
@@ -43,6 +45,7 @@ This project uses crossterm 0.4 in the `any_key_to_continue` module.
 
 [Docs](https://gitlab.com/efunb/dont_disappear/-/jobs/artifacts/master/download?job=docs)
 
+## **Warning**
 
 **If you are viewing this from GitHub then this is a read only copy. Please contribute to the GitLab copy [here](https://gitlab.com/efunb/dont_disappear).**
 

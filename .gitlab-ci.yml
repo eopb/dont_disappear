@@ -15,8 +15,6 @@ cache:
 clean-code:
   stage: check
   script:
-    - rustup default nightly
-    - rustup update
     - rustup component add rustfmt-preview
     - cargo fmt --all -- --check
   allow_failure: true
@@ -25,24 +23,17 @@ clean-code:
 check-dont_disappear:
   stage: check
   script:
-    - rustup default nightly
-    - rustup update
     -  cargo check
 
 
 unittests:
   stage: test
   script:
-    - rustup default nightly
-    - rustup update
-    - rm -f examples/press_close.rs
     - cargo test
 
 benchmarktests:
   stage: test
   script:
-    - rustup default nightly
-    - rustup update
     - cargo bench
 
 
@@ -50,9 +41,6 @@ docs:
   stage: publish
   cache: {}
   script:
-    - apt-get update
-    - rustup default nightly
-    - rustup update
     - cargo doc --no-deps
     - rm -r -f docs
     - mkdir docs
@@ -71,9 +59,6 @@ cratesio:
   stage: publish
   cache: {}
   script:
-    - apt-get update
-    - rustup default nightly
-    - rustup update
     - cargo login $CARGO_LOGIN
     - cargo package
     - cargo publish
