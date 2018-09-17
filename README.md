@@ -5,7 +5,15 @@ Tiny crates that stops the console window form closing when the program finishes
 [![Latest version](https://img.shields.io/crates/v/dont_disappear.svg)](https://crates.io/crates/dont_disappear)
 [![downloads-badge](https://img.shields.io/crates/d/dont_disappear.svg)](https://crates.io/crates/dont_disappear)
 
+## Why you need it.
 
+## Features
+
+### Close with enter.
+
+You can close the window with the enter key.
+
+##Docs
 
 [API docs](https://docs.rs/dont_disappear/)
 
