@@ -1,5 +1,5 @@
 use std::io;
-/// ### Close with enter.
+/// ### Message then close with enter.
 /// Prompts user with message `"Press enter to close."`, waits for the user to press enter then ends to program (closing the window).
 /// Add
 /// ```rust
@@ -14,7 +14,7 @@ use std::io;
 pub fn enter_to_continue() {
     custom_enter_to_continue("Press enter to close.".to_string());
 }
-/// ### Close with enter.
+/// ### Custom message then close with enter.
 /// Prompts user with a custom message, waits for the user to press enter then ends to program (closing the window).
 /// Add
 /// ```rust

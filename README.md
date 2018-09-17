@@ -11,21 +11,31 @@ When making an app without a GUI sometimes you display some information before t
 
 ## Features
 
-### Close with enter.
-
-This waits for the user to press enter then ends to program (closing the window).
-
+### Message then close with enter.
+Prompts user with message `"Press enter to close."`, waits for the user to press enter then ends to program (closing the window).
 Add
-
 ```rust
 extern crate dont_disappear;
 ```
-to the top of your file and 
-
+to the top of your file
+and
 ```rust
 dont_disappear::enter_to_continue();
 ```
 to where your program ends
+
+### Custom message then close with enter.
+Prompts user with a custom message, waits for the user to press enter then ends to program (closing the window)Add
+```rust
+extern crate dont_disappear;
+```
+to the top of your file
+and
+```rust
+dont_disappear::custom_enter_to_continue("Your custom message.".to_string());
+```
+to where your program ends
+
 ## Docs
 
 [API docs](https://docs.rs/dont_disappear/)
