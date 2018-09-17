@@ -1,10 +1,14 @@
 [package]
 name = "dont_disappear"
-version = "1.0.0"
+version = "1.0.1"
 authors = ["Ethan Brierley <ethanboxx@gmail.com>"]
 license = "MIT/Apache-2.0"
 readme = "README.md"
 description = """
 Tiny crates that stops the console window form closing when the program finishes.
 """
+documentation = "https://docs.rs/dont_disappear/"
+homepage = "https://crates.io/crates/dont_disappear"
+repository = "https://gitlab.com/efunb/dont_disappear"
+categories = ["GUI", "Development tools", "Command line utilities", "Command-line interface"]
 [dependencies]
