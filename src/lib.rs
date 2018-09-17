@@ -84,7 +84,7 @@ pub mod any_key_to_continue {
 
 /// ### Press close only with window manager or Ctrl-c.
 /// The program just stops and waits to be killed by pressing close only with window manager or Ctrl-c.
-/// The thread is parked so it does not use CPU.
+/// The thread is [parked](https://doc.rust-lang.org/nightly/std/thread/fn.park.html) so it does not use CPU.
 /// Add
 /// ```rust
 /// extern crate dont_disappear;
