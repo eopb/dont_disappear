@@ -36,6 +36,8 @@ dont_disappear::custom_enter_to_continue("Your custom message.".to_string());
 ```
 to where your program ends
 
+## Examples
+
 ## Docs
 
 [API docs](https://docs.rs/dont_disappear/)

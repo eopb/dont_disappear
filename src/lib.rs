@@ -1,4 +1,6 @@
-//Use mod to namespace diffent types
+//! Tiny crates that stops the console window form closing when the program finishes.
+
+/// Using the `enter_to_continue` method makes is the simplest way of using this crate, however, the only key you can use with it is the enter key.
 pub mod enter_to_continue {
     use std::io;
     /// ### Message then close with enter.
@@ -34,6 +36,7 @@ pub mod enter_to_continue {
         io::stdin().read_line(&mut input).unwrap();
     }
 }
+/// The `any_key_to_continue` method responds to any key press, however, can return strange characters when Ctrl-c or Delete keys are used.
 pub mod any_key_to_continue {
     extern crate crossterm;
     use self::crossterm::input;
