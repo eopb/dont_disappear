@@ -1,0 +1,94 @@
+
+image: "rust:latest"
+
+stages:
+  - check
+  - test
+  - publish
+  - post-run
+
+cache:
+  key: "${CI_JOB_NAME}"
+  paths:
+    - ${CI_PROJECT_DIR}/target/
+
+clean-code:
+  stage: check
+  script:
+    - rustup default nightly
+    - rustup update
+    - rustup component add rustfmt-preview
+    - cargo fmt --all -- --check
+  allow_failure: true
+
+
+check-dont_disappear:
+  stage: check
+  script:
+    - rustup default nightly
+    - rustup update
+    -  cargo check
+
+
+unittests:
+  stage: test
+  script:
+    - rustup default nightly
+    - rustup update
+    - cargo test
+
+benchmarktests:
+  stage: test
+  script:
+    - rustup default nightly
+    - rustup update
+    - cargo bench
+
+
+docs:
+  stage: publish
+  cache: {}
+  script:
+    - apt-get update
+    - rustup default nightly
+    - rustup update
+    - cargo doc --no-deps
+    - rm -r -f docs
+    - mkdir docs
+    - cp -R target/doc docs
+  when: on_success
+  artifacts:
+    paths:
+      - docs
+    expire_in: 2 weeks
+  only:
+    refs:
+      - master
+      - dev
+
+cratesio:
+  stage: publish
+  cache: {}
+  script:
+    - apt-get update
+    - rustup default nightly
+    - rustup update
+    - cargo login $CARGO_LOGIN
+    - cargo package
+    - cargo publish
+  when: on_success
+  only:
+    refs:
+      - master
+      - dev
+  allow_failure: true
+
+
+clippy:
+  stage: post-run
+  script:
+    - rustup default nightly
+    - rustup update
+    - rustup component add clippy-preview
+    - cargo clippy --all -- -D clippy::all
+  allow_failure: true

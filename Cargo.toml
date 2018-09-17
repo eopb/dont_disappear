@@ -1,0 +1,10 @@
+[package]
+name = "dont_disappear"
+version = "0.0.1"
+authors = ["Ethan Brierley <ethanboxx@gmail.com>"]
+license = "MIT/Apache-2.0"
+description = """
+
+"""
+
+[dependencies]
