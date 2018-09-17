@@ -11,16 +11,20 @@ When making an app without a GUI sometimes you display some information before t
 
 ## Features
 
-Read the [API docs](https://docs.rs/dont_disappear/)
+[Close with any key.](https://docs.rs/dont_disappear/2.0.1/dont_disappear/any_key_to_continue/index.html)
+[Close with enter key.](https://docs.rs/dont_disappear/2.0.1/dont_disappear/enter_to_continue/index.html)
 
 ## Examples
-
+[Any key to continue](https://gitlab.com/efunb/dont_disappear/raw/master/examples/any_key_to_continue.rs)
 ```
 cargo run --example any_key_to_continue
 ```
+[Enter to continue](https://gitlab.com/efunb/dont_disappear/raw/master/examples/enter_to_continue.rs)
 ```
 cargo run --example enter_to_continue
 ```
+
+
 
 ## Docs
 
