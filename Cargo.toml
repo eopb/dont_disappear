@@ -1,10 +1,10 @@
 [package]
 name = "dont_disappear"
-version = "0.0.2"
+version = "0.0.3"
 authors = ["Ethan Brierley <ethanboxx@gmail.com>"]
 license = "MIT/Apache-2.0"
 readme = "README.md"
 description = """
-
+Tiny crates that stops the console window form closing when the program finishes.
 """
 [dependencies]
