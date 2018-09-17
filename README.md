@@ -15,6 +15,13 @@ Read the [API docs](https://docs.rs/dont_disappear/)
 
 ## Examples
 
+```
+cargo run --example any_key_to_continue
+```
+```
+cargo run --example enter_to_continue
+```
+
 ## Docs
 
 [API docs](https://docs.rs/dont_disappear/)

@@ -1,3 +1,5 @@
+//TODO loop { std::thread::park(); }
+
 //! Tiny crates that stops the console window form closing when the program finishes.
 
 /// Using the `enter_to_continue` module makes is the simplest way of using this crate, however, the only key you can use with it is the enter key.
