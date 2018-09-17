@@ -13,7 +13,7 @@ When making an app without a GUI sometimes you display some information before t
 
 ### Close with enter.
 
-You can close the window with the enter key.
+This waits for the user to press enter then ends to program (closing the window).
 
 Add
 
