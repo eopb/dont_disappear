@@ -80,7 +80,6 @@ cratesio:
   only:
     refs:
       - master
-      - dev
   allow_failure: true
 
 
