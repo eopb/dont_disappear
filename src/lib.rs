@@ -57,7 +57,7 @@ pub mod any_key_to_continue {
         custom_msg("Press any key to continue")
     }
     /// ### Message then close with any key.
-    /// Prompts user with message `"Press any key to continue"`, waits for the user to press a key then ends to program (closing the window).
+    /// Prompts user with a custom message, waits for the user to press a key then ends to program (closing the window).
     /// Add
     /// ```rust
     /// extern crate dont_disappear;
