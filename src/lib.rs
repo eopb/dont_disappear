@@ -1,4 +1,4 @@
-//TODO loop { std::thread::park(); }
+//TODO
 
 //! Tiny crates that stops the console window form closing when the program finishes.
 
@@ -79,5 +79,24 @@ pub mod any_key_to_continue {
             Ok(_s) => (),
             Err(_e) => (),
         }
+    }
+}
+
+/// ### Press close only with window manager or Ctrl-c.
+/// The program just stops and waits to be killed by pressing close only with window manager or Ctrl-c.
+/// The thread is parked so it does not use CPU.
+/// Add
+/// ```rust
+/// extern crate dont_disappear;
+/// ```
+/// to the top of your file
+/// and
+/// ```rust
+/// dont_disappear::press_close();
+/// ```
+/// to where your program ends
+pub fn press_close() {
+    loop {
+        std::thread::park();
     }
 }

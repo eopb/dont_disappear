@@ -35,6 +35,7 @@ unittests:
   script:
     - rustup default nightly
     - rustup update
+    - rm -f examples/press_close.rs
     - cargo test
 
 benchmarktests:
