@@ -30,7 +30,6 @@ unittests:
   stage: test
   script:
     - apt-get update
-    
     - apt-get install tree -y
     - tree
     - cargo build
