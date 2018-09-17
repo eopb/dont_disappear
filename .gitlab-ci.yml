@@ -34,7 +34,9 @@ unittests:
     - apt-get install tree -y
     - tree
     - cargo build
-    - rm -f /examples/press_close.rs
+    - cd examples
+    - rm -f press_close.rs
+    - cd ..
     - tree
     - cargo test
 
