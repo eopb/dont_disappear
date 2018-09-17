@@ -10,6 +10,5 @@ Tiny crates that stops the console window form closing when the program finishes
 documentation = "https://docs.rs/dont_disappear/"
 homepage = "https://crates.io/crates/dont_disappear"
 repository = "https://gitlab.com/efunb/dont_disappear"
-categories = ["GUI", "Development tools", "Command line utilities", "Command-line interface"]
 [dependencies]
 crossterm = "0.4"
