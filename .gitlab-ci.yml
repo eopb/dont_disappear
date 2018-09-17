@@ -35,7 +35,6 @@ unittests:
     - tree
     - cargo build
     - cd examples
-    - rm -f press_close.rs
     - rm -f any_key_to_continue.rs
     - cd ..
     - tree
