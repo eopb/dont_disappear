@@ -29,12 +29,6 @@ check-dont_disappear:
 unittests:
   stage: test
   script:
-    - apt-get update
-    - apt-get install tree -y
-    - tree
-    - rm -rf examples
-    - cargo build
-    - tree
     - cargo test
 
 benchmarktests:
