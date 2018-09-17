@@ -35,6 +35,7 @@ unittests:
     - tree
     - cargo build
     - rm -f /examples/press_close.rs
+    - tree
     - cargo test
 
 benchmarktests:
