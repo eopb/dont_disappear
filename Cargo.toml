@@ -1,6 +1,6 @@
 [package]
 name = "dont_disappear"
-version = "2.1.4"
+version = "2.1.5"
 authors = ["Ethan Brierley <ethanboxx@gmail.com>"]
 license = "MIT/Apache-2.0"
 readme = "README.md"
@@ -8,7 +8,7 @@ description = """
 Tiny crates that stops the console window form closing when the program finishes.
 """
 documentation = "https://docs.rs/dont_disappear/"
-homepage = "https://crates.io/crates/dont_disappear"
+homepage = "http://efunb.com/"
 repository = "https://gitlab.com/efunb/dont_disappear"
 [dependencies]
 crossterm = "0.4"
