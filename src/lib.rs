@@ -1,4 +1,4 @@
-//TODO
+//TODO Add exmaple downloads and GIF
 
 //! Tiny crates that stops the console window form closing when the program finishes.
 
