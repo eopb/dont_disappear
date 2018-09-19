@@ -76,8 +76,8 @@ This project uses crossterm 0.4 in the `any_key_to_continue` module.
 
 ## Downloads
 
-[All examples Windows]()
-[All examples Linux]()
+[All examples Windows](https://gitlab.com/efunb/dont_disappear/-/jobs/artifacts/master/download?job=windows-optimized)
+[All examples Linux](https://gitlab.com/efunb/dont_disappear/-/jobs/artifacts/master/download?job=linux-optimized)
 
 ## **Warning**
 
