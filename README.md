@@ -14,7 +14,7 @@ When making an app without a GUI sometimes you display some information before t
 
 ## Help
 
-If you run into any issues please email [incoming+efunb/dont_disappear@incoming.gitlab.com](mailto:incoming+efunb/dont_disappear@incoming.gitlab.com)
+If you run into any issues or need help with using `dont_disappear` in your project please email [incoming+efunb/dont_disappear@incoming.gitlab.com](mailto:incoming+efunb/dont_disappear@incoming.gitlab.com)
 
 ## How to use example.
 
