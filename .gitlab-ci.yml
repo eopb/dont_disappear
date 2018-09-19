@@ -8,14 +8,6 @@ stages:
   - publish
   - post-run
 
-clean-code:
-  stage: check
-  script:
-    - rustup component add rustfmt-preview
-    - cargo fmt --all -- --check
-  allow_failure: true
-
-
 check-dont_disappear:
   stage: check
   script:
@@ -115,6 +107,13 @@ cratesio:
       - master
   allow_failure: true
 
+
+rustfmt:
+  stage: post-run
+  script:
+    - rustup component add rustfmt-preview
+    - cargo fmt --all -- --check
+  allow_failure: true
 
 clippy:
   stage: post-run
