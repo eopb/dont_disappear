@@ -1,4 +1,4 @@
-# Dont Disappear
+# Don't Disappear
 Tiny crates that stops the console window form closing when the program finishes.
 [![pipeline status](https://gitlab.com/efunb/dont_disappear/badges/master/pipeline.svg)](https://gitlab.com/efunb/noughts_and_crosses/commits/master)
 [![License](https://img.shields.io/crates/l/dont_disappear.svg)](https://crates.io/crates/dont_disappear)
@@ -9,6 +9,8 @@ Tiny crates that stops the console window form closing when the program finishes
 ## Why you need it.
 
 When making an app without a GUI sometimes you display some information before the program ends. If you send this program to someone and they run it in the windows command prompt or many other consoles the window may close before showing the data. This crate allows the user to wait until they have read the data before they close the window.
+
+![Example of Don't Disappear in action](example.gif)
 
 ## How to use example.
 

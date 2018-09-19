@@ -1,5 +1,10 @@
 //TODO Add exmaple downloads and GIF and incoming+efunb/dont_disappear@incoming.gitlab.com
-
+// https://gitlab.com/efunb/dont_disappear/-/jobs/artifacts/master/raw/files/any_key_to_continue?job=linux-optimized
+// https://gitlab.com/efunb/dont_disappear/-/jobs/artifacts/master/raw/files/enter_to_continue?job=linux-optimized
+// https://gitlab.com/efunb/dont_disappear/-/jobs/artifacts/master/raw/files/press_close?job=linux-optimized
+// https://gitlab.com/efunb/dont_disappear/-/jobs/artifacts/master/raw/files/any_key_to_continue.exe?job=windows-optimized
+// https://gitlab.com/efunb/dont_disappear/-/jobs/artifacts/master/raw/files/enter_to_continue.exe?job=windows-optimized
+// https://gitlab.com/efunb/dont_disappear/-/jobs/artifacts/master/raw/files/press_close.exe?job=windows-optimized
 //! Tiny crates that stops the console window form closing when the program finishes.
 
 /// Using the `enter_to_continue` module makes is the simplest way of using this crate, however, the only key you can use with it is the enter key.
