@@ -26,11 +26,11 @@ fn main() {
 
 ## Features
 
-[Close with any key.](https://docs.rs/dont_disappear/2.1.1/dont_disappear/any_key_to_continue/index.html)
+[Close with any key.](https://docs.rs/dont_disappear/2.1.8/dont_disappear/any_key_to_continue/index.html)
 
-[Close with enter key.](https://docs.rs/dont_disappear/2.1.1/dont_disappear/enter_to_continue/index.html)
+[Close with enter key.](https://docs.rs/dont_disappear/2.1.8/dont_disappear/enter_to_continue/index.html)
 
-[Close with window manager.](https://docs.rs/dont_disappear/2.1.1/dont_disappear/fn.press_close.html)
+[Close with window manager.](https://docs.rs/dont_disappear/2.1.8/dont_disappear/fn.press_close.html)
 
 ## Examples
 [Any key to continue](https://gitlab.com/efunb/dont_disappear/raw/master/examples/any_key_to_continue.rs)
