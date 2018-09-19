@@ -10,6 +10,20 @@ Tiny crates that stops the console window form closing when the program finishes
 
 When making an app without a GUI sometimes you display some information before the program ends. If you send this program to someone and they run it in the windows command prompt or many other consoles the window may close before showing the data. This crate allows the user to wait until they have read the data before they close the window.
 
+## How to use example.
+
+This is one example of one of the ways you could use one of the `dont_disappear` functions.
+
+```no_run
+extern crate dont_disappear;
+
+fn main() {
+    println!("Here is some data");
+    dont_disappear::any_key_to_continue::default();
+}
+```
+
+
 ## Features
 
 [Close with any key.](https://docs.rs/dont_disappear/2.1.1/dont_disappear/any_key_to_continue/index.html)
