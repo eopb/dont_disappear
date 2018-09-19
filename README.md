@@ -39,15 +39,27 @@ fn main() {
 [Close with window manager.](https://docs.rs/dont_disappear/2.1.8/dont_disappear/fn.press_close.html)
 
 ## Examples
-[Any key to continue](https://gitlab.com/efunb/dont_disappear/raw/master/examples/any_key_to_continue.rs)
+
+### Any key to continue
+[Raw](https://gitlab.com/efunb/dont_disappear/raw/master/examples/any_key_to_continue.rs)
+[Download example for Windows](https://gitlab.com/efunb/dont_disappear/-/jobs/artifacts/master/raw/files/any_key_to_continue.exe?job=windows-optimized)
+[Download example for Linux](https://gitlab.com/efunb/dont_disappear/-/jobs/artifacts/master/raw/files/any_key_to_continue?job=linux-optimized)
 ```
 cargo run --example any_key_to_continue
 ```
-[Enter to continue](https://gitlab.com/efunb/dont_disappear/raw/master/examples/enter_to_continue.rs)
+
+### Enter to continue
+[Raw](https://gitlab.com/efunb/dont_disappear/raw/master/examples/enter_to_continue.rs)
+[Download example for Windows](https://gitlab.com/efunb/dont_disappear/-/jobs/artifacts/master/raw/files/enter_to_continue.exe?job=windows-optimized)
+[Download example for Linux](https://gitlab.com/efunb/dont_disappear/-/jobs/artifacts/master/raw/files/enter_to_continue?job=linux-optimized)
 ```
 cargo run --example enter_to_continue
 ```
-[Close with window manager.](https://gitlab.com/efunb/dont_disappear/raw/master/examples/press_close.rs)
+
+### Close with window manager.
+[Raw](https://gitlab.com/efunb/dont_disappear/raw/master/examples/press_close.rs)
+[Download example for Windows](https://gitlab.com/efunb/dont_disappear/-/jobs/artifacts/master/raw/files/press_close.exe?job=windows-optimized)
+[Download example for Linux](https://gitlab.com/efunb/dont_disappear/-/jobs/artifacts/master/raw/files/press_close?job=linux-optimized)
 ```
 cargo run --example press_close
 ```
@@ -56,7 +68,7 @@ cargo run --example press_close
 
 ## Docs
 
-[API docs](https://docs.rs/dont_disappear/)
+[API Documentation](https://docs.rs/dont_disappear/)
 
 ## Dependencies
 
@@ -64,7 +76,8 @@ This project uses crossterm 0.4 in the `any_key_to_continue` module.
 
 ## Downloads
 
-[Docs](https://gitlab.com/efunb/dont_disappear/-/jobs/artifacts/master/download?job=docs)
+[All examples Windows]()
+[All examples Linux]()
 
 ## **Warning**
 
