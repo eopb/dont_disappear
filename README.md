@@ -12,6 +12,10 @@ When making an app without a GUI sometimes you display some information before t
 
 ![Example of Don't Disappear in action](example.gif)
 
+## Help
+
+If you run into any issues please email [incoming+efunb/dont_disappear@incoming.gitlab.com](mailto:incoming+efunb/dont_disappear@incoming.gitlab.com)
+
 ## How to use example.
 
 This is one example of one of the ways you could use one of the `dont_disappear` functions.
