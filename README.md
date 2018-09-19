@@ -16,7 +16,7 @@ When making an app without a GUI sometimes you display some information before t
 
 This is one example of one of the ways you could use one of the `dont_disappear` functions.
 
-```no_run
+```no_run, rust
 extern crate dont_disappear;
 
 fn main() {
