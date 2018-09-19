@@ -1,5 +1,5 @@
 # Don't Disappear
-Tiny crates that stops the console window form closing when the program finishes.
+Tiny crates that prevents the console window from closing when the program finishes.
 [![pipeline status](https://gitlab.com/efunb/dont_disappear/badges/master/pipeline.svg)](https://gitlab.com/efunb/noughts_and_crosses/commits/master)
 [![License](https://img.shields.io/crates/l/dont_disappear.svg)](https://crates.io/crates/dont_disappear)
 [![Latest version](https://img.shields.io/crates/v/dont_disappear.svg)](https://crates.io/crates/dont_disappear)
