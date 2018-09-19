@@ -43,24 +43,33 @@ fn main() {
 
 ### Any key to continue
 [Raw](https://gitlab.com/efunb/dont_disappear/raw/master/examples/any_key_to_continue.rs)
+
 [Download example for Windows](https://gitlab.com/efunb/dont_disappear/-/jobs/artifacts/master/raw/files/any_key_to_continue.exe?job=windows-optimized)
+
 [Download example for Linux](https://gitlab.com/efunb/dont_disappear/-/jobs/artifacts/master/raw/files/any_key_to_continue?job=linux-optimized)
+
 ```
 cargo run --example any_key_to_continue
 ```
 
 ### Enter to continue
 [Raw](https://gitlab.com/efunb/dont_disappear/raw/master/examples/enter_to_continue.rs)
+
 [Download example for Windows](https://gitlab.com/efunb/dont_disappear/-/jobs/artifacts/master/raw/files/enter_to_continue.exe?job=windows-optimized)
+
 [Download example for Linux](https://gitlab.com/efunb/dont_disappear/-/jobs/artifacts/master/raw/files/enter_to_continue?job=linux-optimized)
+
 ```
 cargo run --example enter_to_continue
 ```
 
 ### Close with window manager.
 [Raw](https://gitlab.com/efunb/dont_disappear/raw/master/examples/press_close.rs)
+
 [Download example for Windows](https://gitlab.com/efunb/dont_disappear/-/jobs/artifacts/master/raw/files/press_close.exe?job=windows-optimized)
+
 [Download example for Linux](https://gitlab.com/efunb/dont_disappear/-/jobs/artifacts/master/raw/files/press_close?job=linux-optimized)
+
 ```
 cargo run --example press_close
 ```
@@ -78,6 +87,7 @@ This project uses crossterm 0.4 in the `any_key_to_continue` module.
 ## Downloads
 
 [All examples Windows](https://gitlab.com/efunb/dont_disappear/-/jobs/artifacts/master/download?job=windows-optimized)
+
 [All examples Linux](https://gitlab.com/efunb/dont_disappear/-/jobs/artifacts/master/download?job=linux-optimized)
 
 ## **Warning**
