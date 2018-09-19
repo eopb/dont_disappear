@@ -7,11 +7,6 @@ stages:
   - publish
   - post-run
 
-cache:
-  key: "${CI_JOB_NAME}"
-  paths:
-    - ${CI_PROJECT_DIR}/target/
-
 clean-code:
   stage: check
   script:
@@ -39,7 +34,6 @@ benchmarktests:
 
 docs:
   stage: publish
-  cache: {}
   script:
     - cargo doc --no-deps
     - rm -r -f docs
@@ -57,7 +51,6 @@ docs:
 
 cratesio:
   stage: publish
-  cache: {}
   script:
     - cargo login $CARGO_LOGIN
     - cargo package
