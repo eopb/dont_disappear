@@ -1,11 +1,11 @@
 [package]
 name = "dont_disappear"
-version = "2.1.10"
+version = "2.1.11"
 authors = ["Ethan Brierley <ethanboxx@gmail.com>"]
 license = "MIT/Apache-2.0"
 readme = "README.md"
 description = """
-Tiny crates that prevents the console window from closing when the program finishes.
+Tiny crate that prevents the console window from closing when the program finishes.
 """
 documentation = "https://docs.rs/dont_disappear/"
 homepage = "http://efunb.com/"
