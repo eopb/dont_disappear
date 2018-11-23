@@ -3,6 +3,7 @@
 /// Using the `enter_to_continue` module makes is the simplest way of using this crate, however, the only key you can use with it is the enter key.
 pub mod enter_to_continue {
     use std::io;
+    use std::io::Write;
     /// ### Message then close with enter.
     /// Prompts user with message `"Press enter to close."`, waits for the user to press enter then ends to program (closing the window).
     /// Add
@@ -33,9 +34,9 @@ pub mod enter_to_continue {
     /// ```
     /// to where your program ends
     pub fn custom_msg(msg: &str) {
-        let mut input = String::new();
         println!("{}", msg);
-        io::stdin().read_line(&mut input).unwrap();
+        io::stdout().flush().unwrap();
+        io::stdin().read_line(&mut String::new()).unwrap();
     }
 }
 /// The `any_key_to_continue` module responds to any key press, however, can return strange characters when Ctrl-c or Delete keys are used.
@@ -72,15 +73,10 @@ pub mod any_key_to_continue {
     /// dont_disappear::any_key_to_continue::custom_msg("Your custom message.");
     /// ```
     /// to where your program ends
+    #[allow(unused_must_use)]
     pub fn custom_msg(msg: &str) {
         println!("{}", msg);
-        let screen = Screen::default();
-        let input = input(&screen);
-
-        match input.read_char() {
-            Ok(_s) => (),
-            Err(_e) => (),
-        }
+        input(&Screen::default()).read_char();
     }
 }
 
