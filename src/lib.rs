@@ -35,6 +35,7 @@ pub mod enter_to_continue {
     /// to where your program ends
     pub fn custom_msg(msg: &str) {
         print!("{}", msg);
+        io::stdout().flush().unwrap();
         io::stdin().read_line(&mut String::new()).unwrap();
     }
 }
@@ -43,6 +44,8 @@ pub mod any_key_to_continue {
     extern crate crossterm;
     use self::crossterm::input;
     use self::crossterm::Screen;
+    use std::io;
+    use std::io::Write;
     /// ### Message then close with any key.
     /// Prompts user with message `"Press any key to continue"`, waits for the user to press a key then ends to program (closing the window).
     /// Add
@@ -75,6 +78,7 @@ pub mod any_key_to_continue {
     #[allow(unused_must_use)]
     pub fn custom_msg(msg: &str) {
         print!("{}", msg);
+        io::stdout().flush().unwrap();
         input(&Screen::default()).read_char();
     }
 }
