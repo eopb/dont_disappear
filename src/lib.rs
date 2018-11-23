@@ -34,7 +34,7 @@ pub mod enter_to_continue {
     /// ```
     /// to where your program ends
     pub fn custom_msg(msg: &str) {
-        println!("{}", msg);
+        print!("{}", msg);
         io::stdout().flush().unwrap();
         io::stdin().read_line(&mut String::new()).unwrap();
     }
@@ -75,7 +75,7 @@ pub mod any_key_to_continue {
     /// to where your program ends
     #[allow(unused_must_use)]
     pub fn custom_msg(msg: &str) {
-        println!("{}", msg);
+        print!("{}", msg);
         input(&Screen::default()).read_char();
     }
 }
