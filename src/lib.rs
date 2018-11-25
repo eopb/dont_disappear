@@ -18,7 +18,7 @@ pub mod enter_to_continue {
     /// ```
     /// to where your program ends
     pub fn default() {
-        custom_msg("Press enter to close.");
+        custom_msg("Press enter to exit.");
     }
     /// ### Custom message then close with enter.
     /// Prompts user with a custom message, waits for the user to press enter then ends to program (closing the window).
