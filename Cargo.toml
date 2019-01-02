@@ -1,6 +1,6 @@
 [package]
 name = "dont_disappear"
-version = "2.2.1"
+version = "3.0.0"
 authors = ["Ethan Brierley <ethanboxx@gmail.com>"]
 license = "MIT/Apache-2.0"
 readme = "README.md"
@@ -10,5 +10,6 @@ Tiny crate that prevents the console window from closing when the program finish
 documentation = "https://docs.rs/dont_disappear/"
 homepage = "http://efunb.com/"
 repository = "https://gitlab.com/efunb/dont_disappear"
+edition = "2018"
 [dependencies]
 crossterm = "0.5"
