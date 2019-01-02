@@ -1,6 +1,6 @@
 [package]
 name = "dont_disappear"
-version = "2.2.0"
+version = "2.2.1"
 authors = ["Ethan Brierley <ethanboxx@gmail.com>"]
 license = "MIT/Apache-2.0"
 readme = "README.md"
@@ -11,4 +11,4 @@ documentation = "https://docs.rs/dont_disappear/"
 homepage = "http://efunb.com/"
 repository = "https://gitlab.com/efunb/dont_disappear"
 [dependencies]
-crossterm = "0.4"
+crossterm = "0.5"

@@ -43,7 +43,6 @@ pub mod enter_to_continue {
 pub mod any_key_to_continue {
     extern crate crossterm;
     use self::crossterm::input;
-    use self::crossterm::Screen;
     use std::io;
     use std::io::Write;
     /// ### Message then close with any key.
@@ -79,7 +78,7 @@ pub mod any_key_to_continue {
     pub fn custom_msg(msg: &str) {
         print!("{}", msg);
         io::stdout().flush().unwrap();
-        input(&Screen::default()).read_char();
+        input().read_char();
     }
 }
 
