@@ -82,7 +82,7 @@ cargo run --example press_close
 
 ## Dependencies
 
-This project uses crossterm 0.4 in the `any_key_to_continue` module.
+This project uses crossterm in the `any_key_to_continue` module.
 
 ## Downloads
 

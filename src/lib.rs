@@ -1,9 +1,16 @@
 //! Tiny crates that stops the console window form closing when the program finishes.
+use std::io;
+use std::io::Write;
+
+// Flush only when possible.
+fn try_flush() {
+    io::stdout().flush().unwrap_or(())
+}
 
 /// Using the `enter_to_continue` module makes is the simplest way of using this crate, however, the only key you can use with it is the enter key.
 pub mod enter_to_continue {
+    use crate::try_flush;
     use std::io;
-    use std::io::Write;
     /// ### Message then close with enter.
     /// Prompts user with message `"Press enter to close."`, waits for the user to press enter then ends to program (closing the window).
     /// Add
@@ -35,17 +42,14 @@ pub mod enter_to_continue {
     /// to where your program ends
     pub fn custom_msg(msg: &str) {
         print!("{}", msg);
-        io::stdout().flush().unwrap();
+        try_flush();
         io::stdin().read_line(&mut String::new()).unwrap();
     }
 }
 /// The `any_key_to_continue` module responds to any key press, however, can return strange characters when Ctrl-c or Delete keys are used.
 pub mod any_key_to_continue {
-    extern crate crossterm;
-    use self::crossterm::input;
-    use self::crossterm::Screen;
-    use std::io;
-    use std::io::Write;
+    use crate::try_flush;
+    use crossterm::input;
     /// ### Message then close with any key.
     /// Prompts user with message `"Press any key to continue"`, waits for the user to press a key then ends to program (closing the window).
     /// Add
@@ -78,8 +82,8 @@ pub mod any_key_to_continue {
     #[allow(unused_must_use)]
     pub fn custom_msg(msg: &str) {
         print!("{}", msg);
-        io::stdout().flush().unwrap();
-        input(&Screen::default()).read_char();
+        try_flush();
+        input().read_char();
     }
 }
 
