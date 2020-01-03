@@ -12,4 +12,4 @@ homepage = "http://efunb.com/"
 repository = "https://gitlab.com/efunb/dont_disappear"
 edition = "2018"
 [dependencies]
-crossterm = "0.5"
+crossterm = "0.8"

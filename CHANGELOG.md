@@ -1,3 +1,5 @@
+# 3.0.1
+- Bump crossterm version used.
 # **__3.0.0__**
 - Move to edition 2018
 - Only flush when possible. (Stops possible panic)
