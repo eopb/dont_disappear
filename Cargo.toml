@@ -1,6 +1,6 @@
 [package]
 name = "dont_disappear"
-version = "3.0.0"
+version = "3.0.1"
 authors = ["Ethan Brierley <ethanboxx@gmail.com>"]
 license = "MIT/Apache-2.0"
 readme = "README.md"
